@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+
     <title>World Clock - Mumina Mohamed</title>
   </head>
   <body>
@@ -11,26 +14,36 @@
       <h1>World Clock</h1>
       <select>
         <option value="">Select a city</option>
-        <option value="">New Orleans</option>
-        <option value="">Nairobi</option>
-        <option value="">Moscow</option>
+        <option value="neworleans">New Orleans</option>
+        <option value="nairobi">Nairobi</option>
+        <option value="moscow">Moscow</option>
       </select>
-      <div class="city">
-        <div>
-          <h2>Phoenix 🇦🇿</h2>
-          <div class="date">October 24th 2023</div>
-        </div>
-        <div class="time">3:33 <small>PM</small></div>
-      </div>
+      <div class="cities">
+  <div class="city" id="phoenix">
+    <h2>Phoenix 🇦🇿</h2>
+    <div class="date"></div>
+    <div class="time"></div>
+  </div>
+</div>
 
-      <div class="city">
-        <div>
-          <h2>Denver co</h2>
-          <div class="date">October 24th 2023</div>
-        </div>
-        <div class="time">3:33 <small>PM</small></div>
-      </div>
-    </div>
+
+<div class="cities">
+  <div class="city" id="london">
+    <h2>london uk</h2>
+    <div class="date"></div>
+    <div class="time"></div>
+  </div>
+</div>
+
+
+<div class="cities">
+  <div class="city" id="denver">
+    <h2>Denver co</h2>
+    <div class="date"></div>
+    <div class="time"></div>
+  </div>
+</div>
+
     <footer>
       This project was coded by <strong>Mumina Mohamed</strong> and is
       <a href="https://github.com/Mumina033/World-clock" target="_blank">
